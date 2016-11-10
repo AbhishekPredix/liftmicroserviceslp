@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Predix Microservice templates</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h2>Greetings from Predix Spring Boot!</h2>
+	<hr></hr>
+	<p>Explore your Microservice</p>
+  	<p><a th:href="@{${api}}">Api explorer</a></p>
+	<p><a th:href="@{${health}}">Microservice Health</a></p>
+	<p><a th:href="@{${myTest}}">MyTest</a></p>
+  	<p><a th:href="@{${docs}}">Docs</a></p>
+  	<p><a th:href="@{${myControlerTest}}">myControlerTest</a></p>
+  	<p><a th:href="@{${liftDetails}}">My Lift REST call</a></p>
+  	<p><a th:href="@{${elevatorList}}">List of elevator</a></p>
+  	<p><a th:href="@{${elevatorAlarmTrend}}">Elevator Alarm Trend</a></p>
+  	<p><a th:href="@{${elevatorAlertList}}">Elevator Alert List</a></p>
+  <!-- 	<p><a th:href="myToken.html">Verify Token Html page</a></p>
+  	<p><a href="./templates/tokenVerificationForm.jsp">Verify Token old</a></p>
+  	<p><a th:href="@{${token}}">Token</a></p>
+  	<p><a th:href="@{${tokenold}}">Token</a></p>
+   -->	<p><a th:href="@{${tokenvalidation}}">Validate Token</a></p>
+  	<form action="rest/myservice" method="post">
+        <p>
+            Token : <input type="text" name="token" />
+        </p>
+        
+    </form>
+ 
+</body>
+</html>

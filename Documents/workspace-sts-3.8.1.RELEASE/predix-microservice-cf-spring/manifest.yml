@@ -1,0 +1,13 @@
+---
+applications:
+  - name: predix-microservice-cf-spring-resttestliftworkspace
+#- name: myfirstresttest-predix-microservice-cf-spring
+    buildpack: java_buildpack
+    path: target/predix-microservice-cf-spring-1.1.6.jar
+    timeout : 180
+env:
+   SPRING_PROFILES_ACTIVE : cloud  
+   JAVA_DOCS_URL : https://predixdev.github.io/predix-microservice-cf-spring
+# Adding client authentication - Abhishek
+clientId: lifttest
+
